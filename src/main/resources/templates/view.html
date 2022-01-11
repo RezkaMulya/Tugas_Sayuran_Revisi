@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Sayuran</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>TOKO SAYURANS</div>
+        <hr>  
+        
+        <table border="4" cellpadding="5">
+            
+        <tr>
+            <th colspan="3" bgcolor="#00ff80">Sayuran Segar</th>
+            
+        </tr>
+        <tr>
+            <td rowspan="9">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVek9hFr2lkGhL9MWtEkJEWK8gaWwJvB1arNzw2OiFy-M9FpANd_FHc9a9O5VWGTJn2nk&usqp=CAU" width="200" />
+            </td>
+        </tr>       
+        <tr>
+            <td> Nama Sayuran : </td>
+            <td th:text="${nama}"></td>
+        </tr>
+        <tr>
+            <td> Harga Perkilo : </td>
+            <td th:text="${harga}"></td>
+        </tr>
+        <tr>
+             <td> Jumlah Beli : </td>
+             <td th:text="${Jmlbeli}"></td>
+        </tr>
+        <tr>
+            <td> Jumlah Bayar Awal: </td>
+            <td th:text="${Jmlbayar}"></td>
+        </tr>
+        <tr>
+            <td> Diskon : </td>
+            <td th:text="${disk}"></td>
+        </tr>
+        <tr>
+            <td> Total Bayar Akhir : </td>
+            <td th:text="${total}"></td>
+        </tr>
+        <tr>
+            <td> Uang Pelanggan : </td>
+            <td th:text="${uang}"></td>
+        </tr>
+        <tr>
+            <td> Keterangan : </td>
+            <td th:text="${pesan}"></td>
+        </tr>
+        </table>
+    </body>
+</html>
